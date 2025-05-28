@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>史語時第二組</title>
+  <style>
+    body {
+      font-family: "Helvetica", "Noto Sans TC", sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background-color: #f6fff8;
+      color: #1b263b;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 18px;
+      color: #222;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #a4c3b2;
+      padding-bottom: 1rem;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      margin: 0;
+      padding: 0.5rem;
+      background-color: #dedbd2;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .content {
+      display: none;
+      margin-top: 0.8rem;
+      padding-left: 1rem;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #6b9080;
+      margin: 0.5rem 0;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding: 2rem 5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>史與時第二組期末展演作品簡介</h1>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">作品形式</h2>
+    <div class="content">
+      <p>本作品是以 Unity 為平台製作的 2D 遊戲，模仿經典橫向卷軸遊戲《超級馬力歐》，但將主角與敵人角色重新設定：主角為大野狼，敵人則是三隻小豬。</p>
+      <p>遊戲分為三個背景，代表三個歷史時代，結合互動與聲音敘事，以童話探討歷史在不同時空下的詮釋與變化。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">核心問題</h2>
+    <div class="content">
+      <p>歷史如何在不同時空下被重新詮釋？</p>
+      <p>《三隻小豬》是眾所皆知的童話，但我們對角色的善惡判斷，其實也受到時代文化的影響。透過不同歷史語境中的敘事與角色重構，童話被不斷重寫與理解。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">場景一：鄉村社會（童話原初時代）</h2>
+    <div class="content">
+      <p class="quote">「你是壞蛋大野狼，我的房子不能給你住！」</p>
+      <p>豬代表傳統道德與家庭守護者，狼是破壞秩序的「他者」，童話教導孩子「要乖、要勤勞」。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">場景二：工業化時代（現代化初期）</h2>
+    <div class="content">
+      <p class="quote">「我們建造的是現代化的家，不再怕你這種落伍的野獸了！」</p>
+      <p>豬變成城市建設者與文明象徵，狼則是無法融入體制的落伍者，呈現文明與野性的對抗。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">場景三：科技未來時代（後現代觀點）</h2>
+    <div class="content">
+      <p class="quote">「我是第三代智能豬型機器人，我不會再被你吃掉了。」</p>
+      <p>豬成為智能存在，故事角色被虛構與科技重構，狼成為符號與文化反思的對象。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">總結</h2>
+    <div class="content">
+      <p>這款遊戲不只是童話改編，更是一種互動式的歷史詮釋實驗。</p>
+      <p>透過敘事變形與場景設計，玩家能體驗「歷史詮釋」在不同時代下如何不斷被重構。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">作品呈現</h2>
+    <div class="content">
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">小組分工</h2>
+    <div class="content">
+      <p>遊戲背景繪製：游雅晴, 周昕潼,賴佾暄,梁奕實</p>
+      <p>遊戲角色與道具繪製：梁詠甯,王儲</p>
+       <p>遊戲與網頁製作：呂孟瑾</p>
+       <p>理念發想：樊卓鏗</p>
+       <p>遊戲音樂製作：陳又瑜,陳威廷</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleContent(header) {
+      const content = header.nextElementSibling;
+      const isVisible = content.style.display === "block";
+      content.style.display = isVisible ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
