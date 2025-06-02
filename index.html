@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>史語時第二組</title>
+  <title>瑪莉豬</title>
   <style>
     body {
       font-family: "Helvetica", "Noto Sans TC", sans-serif;
@@ -51,6 +51,19 @@
       body {
         padding: 2rem 5rem;
       }
+      .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
     }
   </style>
 </head>
@@ -107,21 +120,28 @@
   </div>
 
   <div class="section">
-    <h2 onclick="toggleContent(this)">作品呈現</h2>
-    <div class="content">
-      <p></p>
-      <p></p>
+  <h2 onclick="toggleContent(this)">角色與素材設定</h2>
+  <div class="content">
+    <div class="gallery">
+      <img src="中間.png" alt="主角" />
+      <img src="5-removebg-preview.png" alt="豬" />
+      <img src="肉1.png" alt="幫助物品" />
+      <img src="肉.png" alt="幫助物品1" />
+      <img src="1.jpg" alt="木頭" />
+      <img src="3.png" alt="磚頭" />
+      <img src="2.jpg" alt="稻草" />
     </div>
   </div>
+</div>
 
   <div class="section">
     <h2 onclick="toggleContent(this)">小組分工</h2>
     <div class="content">
+      <p>遊戲音樂製作：陳又瑜,陳威廷</p>
       <p>遊戲背景繪製：游雅晴, 周昕潼,賴佾暄,梁奕實</p>
       <p>遊戲角色與道具繪製：梁詠甯,王儲</p>
        <p>遊戲與網頁製作：呂孟瑾</p>
        <p>理念發想：樊卓鏗</p>
-       <p>遊戲音樂製作：陳又瑜,陳威廷</p>
     </div>
   </div>
 
